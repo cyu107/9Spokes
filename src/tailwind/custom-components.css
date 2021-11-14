@@ -1,0 +1,23 @@
+/* custom-components */
+.container {
+  @apply mx-auto px-4;
+}
+
+@screen xl {
+  .container {
+    max-width: 1165px;
+  }
+}
+
+.row {
+  @apply flex flex-wrap -mx-4;
+  &.collapsed {
+    @apply mx-0;
+    .col {
+      @apply px-0;
+    }
+  }
+  .col {
+    @apply px-4;
+  }
+}
